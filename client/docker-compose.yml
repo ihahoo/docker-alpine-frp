@@ -1,0 +1,8 @@
+version: '2'
+services:
+  frps:
+    image: hahoo/frp:latest
+    command: /app/frp/frpc -c /app/frp/frpc.ini
+    restart: always
+    volumes:
+      - ./frpc.ini:/app/frp/frpc.ini
