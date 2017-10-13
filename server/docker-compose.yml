@@ -3,6 +3,11 @@ services:
   frps:
     image: hahoo/frp:latest
     command: /app/frp/frps -c /app/frp/frps.ini
+    ports:
+      - 7000:7000
+      - 7500:7500
+      - 6000:6000
     restart: always
     volumes:
       - ./frps.ini:/app/frp/frps.ini
+      - ./frps.log:/app/frp/frps.log
