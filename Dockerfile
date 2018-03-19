@@ -1,7 +1,7 @@
 FROM alpine:3.6
 
 ENV appdir /app
-ENV PKGVER=0.13.0
+ENV PKGVER=0.16.0
 ENV PKGSOURCE=https://github.com/fatedier/frp/releases/download/v${PKGVER}/frp_${PKGVER}_linux_amd64.tar.gz
 
 RUN mkdir -p $appdir
